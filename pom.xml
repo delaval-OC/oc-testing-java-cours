@@ -12,6 +12,7 @@
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
 		<bootstrap.version>4.3.1</bootstrap.version>
 		<springboot.version>2.2.0.RELEASE</springboot.version>
+		<cucumber.version>6.9.1</cucumber.version>
 	</properties>
 
 	<parent>
@@ -48,11 +49,56 @@
 			<artifactId>junit-jupiter-api</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine -->
+		<dependency>
+		    <groupId>org.junit.vintage</groupId>
+		    <artifactId>junit-vintage-engine</artifactId>
+		    <scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-jvm</artifactId>
+		    <version>${cucumber.version}</version>
+		    <scope>test</scope>
+		    <type>pom</type>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-spring -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-spring</artifactId>
+		    <version>${cucumber.version}</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-junit</artifactId>
+		    <version>${cucumber.version}</version>
+		    
+		</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>6.9.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java8</artifactId>
+    <version>6.9.1</version>
+</dependency>
+
+
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-junit-jupiter</artifactId>
